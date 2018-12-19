@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/db_aty" driverClass="com.mysql.jdbc.Driver" password="root" userId="root" />
+    <javaModelGenerator targetPackage="com.believexin.common.entity.po" targetProject="blood-relationship" />
+    <sqlMapGenerator targetPackage="com.believexin.repository" targetProject="blood-relationship" />
+    <javaClientGenerator targetPackage="com.believexin.repository" targetProject="blood-relationship" type="XMLMAPPER" />
+    
+    <table tableName="t_views_used_tables" enableSelectByExample="true"
+		enableDeleteByExample="false" enableCountByExample="true"
+		enableUpdateByExample="false" selectByExampleQueryId="false">
+	</table>
+  </context>
+</generatorConfiguration>
